@@ -5,7 +5,6 @@
 In this lab we create users and assign them appropriate roles, teams,
 and groups in the Office 365 admin center to represent an
 organisation—Contoso.
-hello world
 
 We also assign the following to the Users:
 
