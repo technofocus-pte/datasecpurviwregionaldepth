@@ -2,7 +2,7 @@
 
 ## Objective:
 
-```In``` this lab we create users and assign them appropriate roles, teams,
+In this lab we create users and assign them appropriate roles, teams,
 and groups in the Office 365 admin center to represent an
 organisation—Contoso.
 
@@ -31,7 +31,7 @@ for implementing security with Microsoft Purview.
 
 1.  Log into the VM with the account details provided in
     the **resources** tab of your lab. Log in to the Microsoft 365 admin
-    center **+++https://admin.microsoft.com+++** using Administrative
+    center **```https://admin.microsoft.com```** using Administrative
     Username and Administrative Password.
 
 2.  From the left pane, select **Users** \> **Active users**, and click
