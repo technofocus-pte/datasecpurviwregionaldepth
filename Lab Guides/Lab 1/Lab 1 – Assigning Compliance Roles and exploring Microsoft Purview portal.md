@@ -495,8 +495,8 @@ Department" -ApplyRightsProtectionTemplate Encrypt+++**
 
 10. Type the following cmdlet to verify changes.
 
-**+++Get-OMEConfiguration -Identity"Finance
-Department" | Format-List+++**
+**```Get-OMEConfiguration -Identity"Finance
+Department" | Format-List```**
 
 ![BrokenImage](./media/image49.png)
 
