@@ -2,7 +2,7 @@
 
 ## Objective:
 
-In this lab we create users and assign them appropriate roles, teams,
+```In``` this lab we create users and assign them appropriate roles, teams,
 and groups in the Office 365 admin center to represent an
 organisation—Contoso.
 
