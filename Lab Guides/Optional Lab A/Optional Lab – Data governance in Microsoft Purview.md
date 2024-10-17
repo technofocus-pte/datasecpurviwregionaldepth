@@ -5,7 +5,7 @@
 To create business domains, glossary terms, define CDEs, and establish
 OKRs follow the given steps.
 
-1.  Open the **+++https://app.powerbi.com/+++**.
+1.  Open the **```https://app.powerbi.com/```**.
 
 2.  Sign in to the Microsoft Purview portal using the admin credentials
     provided with your lab environment.
@@ -108,7 +108,7 @@ domain in Data catalog in Microsoft Purview.
 
 To build out data map, register and scan data, follow the given steps.
 
-1.  Open the **+++https://app.powerbi.com/+++**.
+1.  Open the **```https://app.powerbi.com/```**.
 
 2.  Sign in to the Microsoft Purview portal using the admin credentials
     provided with your lab environment.
@@ -143,7 +143,7 @@ register your data in Data maps in Microsoft Purview.
 Follow the given steps to attach data assets, build context connections,
 and manage policies.
 
-1.  Open the **+++https://app.powerbi.com/+++**.
+1.  Open the **```https://app.powerbi.com/```**.
 
 2.  Sign in to the Microsoft Purview portal using the admin credentials
     provided with your lab environment.
@@ -182,7 +182,7 @@ products in Data catalog in Microsoft Purview.
 Follow the given steps to define connections, create data quality rules,
 profile data, and schedule scans.
 
-1.  Open the **+++https://app.powerbi.com/+++**.
+1.  Open the **```https://app.powerbi.com/```**.
 
 2.  Sign in to the Microsoft Purview portal using the admin credentials
     provided with your lab environment.
@@ -225,7 +225,7 @@ Data catalog in Microsoft Purview.
 Follow the given steps to manage and customize data health controls, and
 to set action severity.
 
-1.  Open the **+++https://app.powerbi.com/+++**.
+1.  Open the **```https://app.powerbi.com/```**.
 
 2.  Sign in to the Microsoft Purview portal using the admin credentials
     provided with your lab environment.
@@ -260,7 +260,7 @@ Data catalog in Microsoft Purview.
 To Manage data access, explore and search for data and request access,
 follow the given steps.
 
-1.  Open the **+++https://app.powerbi.com/+++**.
+1.  Open the **```https://app.powerbi.com/```**.
 
 2.  Sign in to the Microsoft Purview portal using the admin credentials
     provided with your lab environment.

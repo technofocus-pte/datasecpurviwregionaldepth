@@ -16,7 +16,7 @@ different SharePoint sites for identifying typical data created and
 stored by Contoso Ltd.
 
 1.  In **Microsoft Edge**, open a **New InPrivate Window**, navigate
-    to **+++https://purview.microsoft.com+++** and log in as **Patti
+    to **```https://purview.microsoft.com```** and log in as **Patti
     Fernandez** using the username **PattiF@WWLxXXXXXX.onmicrosoft.com**
     and the User Password given on your resources tab.
 
@@ -26,51 +26,31 @@ stored by Contoso Ltd.
 ![A screenshot of a computer Description automatically
 generated](./media/image1.png)
 
-3.  
-
-4.  
-
-5.  
-
-6.  
-
-7.  
-
-8.  
-
-9.  
-
-10. Expand **Classifiers** from the left pane. Select **Trainable
+3. Expand **Classifiers** from the left pane. Select **Trainable
     Classifiers** from the sub-navigation pane. Select **+ Create
     trainable classifier** to create a new classifier.
 
 ![](./media/image2.png)
 
-11. Enter the following information on the **Name and describe your
+4. Enter the following information on the **Name and describe your
     trainable classifier** page:
 
-12. Name: **+++Contoso Company Data+++**
+5. Name: **```Contoso Company Data```**
 
-13. Description: **+++Trainable classifier for company data produced and
-    stored by Contoso Ltd.+++**
+6. Description: **```Trainable classifier for company data produced and
+    stored by Contoso Ltd.```**
 
-14. Select **Next**.
+7. Select **Next**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image3.png)
 
-15. Select **Choose sites** to open the right side pane.
+8. Select **Choose sites** to open the right side pane.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image4.png)
 
-16. Select the following SharePoint sites and select **Add**.
-
-    - 
-
-    - 
-
-    - 
+9. Select the following SharePoint sites and select **Add**.
 
     - Brand
 
@@ -80,95 +60,30 @@ generated](./media/image4.png)
 
     - Sales and Marketing
 
-    - 
-
     - Mark 8 Project Team
-
-    - 
-
-    - 
-
-    - 
-
-    - 
-
-    - 
 
 ![](./media/image5.png)
 
-- 
-- 
-- 
-- 
-- 
-
-17. Wait until the chosen site is shown in the list and select **Next**.
+10. Wait until the chosen site is shown in the list and select **Next**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image6.png)
 
-18. On the **Source of the negative sample content page**, select the
+11. On the **Source of the negative sample content page**, select the
     site **Learn**, and then select **Next**.
 
-19. Review the settings and select **Create trainable classifier**.
+12. Review the settings and select **Create trainable classifier**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image7.png)
 
-20. When the message Your trainable classifier was created is shown,
+13. When the message Your trainable classifier was created is shown,
     select **Done**.
-
-21. 
 
 The documents and files in the chosen SharePoint site are now being
 analyzed, which can take up to 24 hours.
 
 You can explore the already existing classifiers for further review.
-
-## 
-
-1.  
-2.  
-3.  
-4.  
-5.  
-6.  
-7.  - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-8.  
-9.  
-10. 
-11. 
-12. 
-13. 
-14. 
-15. 
-16. 
-17. 
-18. 
-19. 
-20. 
-21. 
-22. 
-23. 
 
 ## Summary:
 

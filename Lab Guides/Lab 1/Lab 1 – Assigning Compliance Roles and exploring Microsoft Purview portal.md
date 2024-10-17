@@ -2,30 +2,15 @@
 
 ## Objective:
 
-In this lab we create users and assign them appropriate roles, teams,
-and groups in the Office 365 admin center to represent an
-organisation—Contoso.
+In this lab we create users and assign them appropriate roles, teams, and groups in the Office 365 admin center to represent an organisation—Contoso.
 
-We also assign the following to the Users:
+Later, we will test **Microsoft 365 built-in Office 365 Message Encryption (OME)**.
 
-- Trial for compliance Assessments
+Firstly, we will modify the default template to ensure that no social IDs dialog is displayed for external recipients when receiving a message protected with Office 365 Message Encryption from users of the organisation that we set up.
 
-Later, we will test **Microsoft 365 built-in** **Office 365 Message
-Encryption (OME)**.
-
-Firstly, we will modify the default template to ensure that no social
-IDs dialog is displayed for external recipients when receiving a message
-protected with Office 365 Message Encryption from users of the
-organisation that we set up.
-
-Then we will create a new custom OME configuration and create a
-transport rule to apply the OME configuration to all mails sent from our
-finance department.
+Then we will create a new custom OME configuration and create a transport rule to apply the OME configuration to all mails sent from our finance department.
 
 ## Exercise 1 - Managing Compliance Roles
-
-In this exercise we will be activating all the trial licenses required
-for implementing security with Microsoft Purview.
 
 ### Task 1 – Adding Manager role to an existing user.
 
@@ -80,13 +65,13 @@ Stay on the same page and continue to the next task.
 ### Task 3 – Creating teams and groups in Microsoft admin center
 
 1.  Now expand **Teams & groups**, select **Active teams & groups** and
-    click on **Add a Microsoft 365 group** under Teams & Microsoft 365
-    groups.
+    click on **Add a Microsoft 365 group** under **Teams & Microsoft 365
+    groups**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image7.png)
 
-2.  For name use **```Contoso** **Finance Team```**, and for description
+2.  For name use **```Contoso Finance Team```**, and for description
     use **```This team handles finance.```**, and then click
     on **Next**.
 
@@ -254,7 +239,7 @@ generated](./media/image24.png)
 ![BrokenImage](./media/image27.png)
 
 9.  When the **Sign in** window is displayed, sign in as **Patti
-    Fernandez** using the username PattiF@WWLxXXXXXX.onmicrosoft.com and
+    Fernandez** using the username PattiF@{TENANTPREFIX}.onmicrosoft.com and
     the User Password given on your resources tab.
 
 10. Verify Azure RMS and IRM is activated in your tenant by using the
@@ -273,8 +258,8 @@ generated](./media/image24.png)
     resources tab)
 
 **```Test-IRMConfiguration -Sender
-adelev@WWLxXXXXXX.onmicrosoft.com -Recipient
-adelev@WWLxXXXXX.onmicrosoft.com```**
+adelev@{TENANTPREFIX}.onmicrosoft.com -Recipient
+adelev@{TENANTPREFIX}.onmicrosoft.com```**
 
 13. Verify all tests are in the status PASS and no errors are shown.
 
@@ -345,7 +330,7 @@ time accessing the encrypted content.
 
 1.  In **Microsoft Edge**, open a **New InPrivate Window** and navigate
     to **```https://outlook.office.com```** and log into Outlook on the web
-    with the username **```AdeleV@WWLxXXXXXX.onmicrosoft.com```** and the User
+    with the username **```AdeleV@{TENANTPREFIX}.onmicrosoft.com```** and the User
     Password given on your resources tab.
 
 2.  On the **Stay signed in?** dialog box, select the **Don’t show this
@@ -446,7 +431,7 @@ Department" -ExternalMailExpiryInDays 7```**
 3.  Change the introduction text message with the following cmdlet:
 
 **```Set-OMEConfiguration -Identity "Finance
-Department" -IntroductionText "from Contoso Ltd. Finance department has
+Department" -IntroductionText "from Contoso Ltd.. Finance department has
 sent you a secure message." ```**
 
 ![BrokenImage](./media/image42.png)
@@ -458,9 +443,7 @@ sent you a secure message." ```**
 
 5.  Change the body email text of the message with the following cmdlet:
 
-**```Set-OMEConfiguration -Identity "Finance
-Department" -EmailText "Encrypted message sent from Contoso Ltd. finance
-department. Handle the content responsibly." ```**
+**```Set-OMEConfiguration -Identity "Finance Department" -EmailText "Encrypted message sent from Contoso Ltd. finance department. Handle the content responsibly." ```**
 
 6.  Confirm the warning message for customizing the template
     with **Y** for Yes and press **Enter**.
@@ -470,8 +453,7 @@ department. Handle the content responsibly." ```**
 7.  Change the disclaimer URL to point to Contoso's privacy statement
     site:
 
-**```Set-OMEConfiguration -Identity "Finance
-Department" -PrivacyStatementURL"https://contoso.com/privacystatement.html"```**
+**```Set-OMEConfiguration -Identity "Finance Department" -PrivacyStatementURL "https://contoso.com/privacystatement.html"```**
 
 ![Text Description automatically generated](./media/image45.png)
 
@@ -484,10 +466,7 @@ Department" -PrivacyStatementURL"https://contoso.com/privacystatement.html"```*
     the custom OME template to all messages sent from the Contoso
     finance team. This process may take a few seconds to complete.
 
-**```New-TransportRule -Name "Encrypt all mails from Contoso Finance
-team" -FromScopeInOrganization -FromMemberOf "Contoso Finance
-Team"-ApplyRightsProtectionCustomizationTemplate"Finance
-Department" -ApplyRightsProtectionTemplate Encrypt```**
+**```New-TransportRule -Name "Encrypt all mails from Finance team" -FromScope InOrganization -FromMemberOf "Contoso Finance Team" -ApplyRightsProtectionCustomizationTemplate "Finance Department" -ApplyRightsProtectionTemplate Encrypt```**
 
 ![BrokenImage](./media/image47.png)
 
@@ -495,8 +474,7 @@ Department" -ApplyRightsProtectionTemplate Encrypt```**
 
 10. Type the following cmdlet to verify changes.
 
-**```Get-OMEConfiguration -Identity"Finance
-Department" | Format-List```**
+**```Get-OMEConfiguration -Identity "Finance Department" | Format-List```**
 
 ![BrokenImage](./media/image49.png)
 
@@ -516,8 +494,8 @@ when you have your own licenses. You can perform step 1 - 4 but your
 mail will not be able to reach the receiver from your current tenant.
 
 1.  In **Microsoft Edge**, open a **New InPrivate Window** and navigate
-    to **https://outlook.office.com** and log into Outlook on the web
-    with the username **adelev**@**WWL**xXXXXXX.onmicrosoft.com and the
+    to **```https://outlook.office.com```** and log into Outlook on the web
+    with the username **```adelev@{TENANTPREFIX}.onmicrosoft.com```** and the
     User Password given on the resources tab.
 
 ![Graphical user interface, text, application Description automatically
@@ -528,8 +506,8 @@ generated](./media/image50.png)
 
 3.  In the **To** line enter your personal or other third-party email
     address that is not in the tenant domain.
-    Enter **Finance Report** to the subject line and
-    enter **Secret finance information.** to the body.
+    Enter **```Finance Report```** to the subject line and
+    enter **```Secret finance information.```** to the body.
 
 4.  Select **Send** to send the message.
 

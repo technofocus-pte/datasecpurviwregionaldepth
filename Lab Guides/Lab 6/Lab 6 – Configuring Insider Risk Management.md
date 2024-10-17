@@ -14,19 +14,19 @@ credentials:
 
 Pattis-Device
 
-pattif@WWLxXXXXXX.onmicrosoft.com
+pattif@{TENANTPREFIX}.onmicrosoft.com
 
 User password
 
 Adeles-Device
 
-adelev@WWLxXXXXXX.onmicrosoft.com
+adelev@{TENANTPREFIX}.onmicrosoft.com
 
 User password
 
 Christies-Device
 
-christies@WWLxXXXXXX.onmicrosoft.com
+christies@{TENANTPREFIX}.onmicrosoft.com
 
 User password
 
@@ -37,7 +37,7 @@ User password
 #### Step 1 – Add users to Insider risk management role group
 
 1.  If the Microsoft Purview portal is open continue to step 2,
-    otherwise, open the **+++https://purview.microsoft.com+++** and log
+    otherwise, open the **```https://purview.microsoft.com```** and log
     in with the **MOD Administrator** credentials.
 
 ![](./media/image1.png)
@@ -135,7 +135,7 @@ generated](./media/image15.png)
 9.  Repeat the steps from 1 to 7 to
     update **Adeles-Device** and **Christies-Device**.
 
-10. Sign in to +++**https://security.microsoft.com/+++** using
+10. Sign in to ```**https://security.microsoft.com/```** using
     your **MOD Administrator** account on your Lab VM.
 
 11. Select **Settings** \> **Device** **onboarding**.
@@ -195,7 +195,7 @@ generated](./media/image24.png)
     and run the command below. The Command Prompt window will close
     automatically.
 
-**+++powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyleHidden $ErrorActionPreference= 'silentlycontinue';(New-ObjectSystem.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe','C:\test-WDATP-test\invoice.exe');Start-Process 'C:\test-WDATP-test\invoice.exe'+++**
+**```powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyleHidden $ErrorActionPreference= 'silentlycontinue';(New-ObjectSystem.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe','C:\test-WDATP-test\invoice.exe');Start-Process 'C:\test-WDATP-test\invoice.exe'```**
 
 ![Text Description automatically generated](./media/image25.png)
 
@@ -214,8 +214,8 @@ generated](./media/image26.png)
     respectively to onboard them as Devices in **Microsoft 365
     Defender** portal.
 
-25. Open the **+++https://purview.microsoft.com+++** and log in with the
-    username **<pattif@WWLxXXXXXX.onmicrosoft.com>** and the User
+25. Open the **```https://purview.microsoft.com```** and log in with the
+    username **<pattif@{TENANTPREFIX}.onmicrosoft.com>** and the User
     password. (replace WWLxXXXXXX with your tenant prefix given on the
     resources tab).
 
@@ -234,8 +234,8 @@ to be enabled, please allow up to 30 minutes.
 #### Step 1 – Create a new policy
 
 1.  If you closed the browser window in the previous task, open
-    the **+++https://purview.microsoft.com+++** and log in with the
-    username **pattif@WWLxXXXXXX.onmicrosoft.com** and the User
+    the **```https://purview.microsoft.com```** and log in with the
+    username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the User
     password. (replace WWLxXXXXXX with your tenant prefix given on the
     resources tab).
 
@@ -374,8 +374,8 @@ with medium confidence](./media/image46.png)
 #### Step 1 – Create a new policy
 
 1.  If you closed the browser window in the previous task, open
-    the **+++https://purview.microsoft.com+++** and log in with the
-    username **pattif@WWLxXXXXXX.onmicrosoft.com** and the User
+    the **```https://purview.microsoft.com```** and log in with the
+    username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the User
     password. (replace WWLxXXXXXX with your tenant prefix given on the
     resources tab).
 
@@ -522,8 +522,8 @@ generated](./media/image63.png)
 #### Step 1 – Create a new policy
 
 1.  If you closed the browser window in the previous task, open
-    the **+++https://purview.microsoft.com+++** and log in with the
-    username **pattif@WWLxXXXXXX.onmicrosoft.com** and the User
+    the **```https://purview.microsoft.com```** and log in with the
+    username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the User
     password. (replace WWLxXXXXXX with your tenant prefix given on the
     resources tab).
 
