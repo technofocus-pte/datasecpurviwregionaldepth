@@ -221,7 +221,7 @@ generated](./media/image60.png)
 3.  Introduzca el siguiente cmdlet para instalar la última versión del
     módulo PowerShell de Exchange Online:
 
-**```Install-ModuleExchangeOnlineManagement```**
+**```Install-Module ExchangeOnlineManagement```**
 
 ![A computer screen with text on it Description automatically
 generated](./media/image61.png)
