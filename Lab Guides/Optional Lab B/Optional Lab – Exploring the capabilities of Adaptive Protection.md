@@ -43,7 +43,7 @@ generated](./media/image3.png)
 
 8.  Now we can customise the DLP policy for each level.
 
-Task 2 – Exploring Default DLP policies for each of the risk levels of
+### Task 2 – Exploring Default DLP policies for each of the risk levels of
 Adaptive Protection
 
 1.  Under Adaptive Protection, select DLP Polices and select Adaptive
