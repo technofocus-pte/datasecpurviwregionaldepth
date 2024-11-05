@@ -28,9 +28,9 @@ that recognizes the pattern of employee IDs near the keywords "Employee"
 and "ID".
 
 1.  In **Microsoft Edge**, open a **New InPrivate Window**, navigate
-    to **```https://purview.microsoft.com```** and log in as
+    to ```https://purview.microsoft.com``` and log in as
     **Patti Fernandez** using the
-    username **```PattiF@{TENANTPREFIX}.onmicrosoft.com```** and the User Password
+    username ```PattiF@{TENANTPREFIX}.onmicrosoft.com``` and the User Password
     given on your resources tab.
 
 2.  From the left navigation, select **Solutions** \> **Data Loss
@@ -48,9 +48,9 @@ generated](./media/image2.png)
 4.  On the **Name your sensitive info type** page, enter the following
     information:
 
-    - **Name**: **```Contoso Employee IDs```**
+    - **Name**: ```Contoso Employee IDs```
 
-    - **Description**: **```Pattern for Contosoemployee IDs```.**
+    - **Description**: ```Pattern for Contoso Employee IDs```.
 
     - Select **Next**.
 
@@ -72,9 +72,9 @@ generated](./media/image5.png)
 7.  In the new right-side pane **Add a regular expression**, enter the
     following:
 
-    - **ID**: **```Contoso IDs```**
+    - **ID**: ```Contoso IDs```
 
-    - **Regular expression**: **```\s\[A-Z\]{3}\[0-9\]{6}\s```**
+    - **Regular expression**: ```\s\[A-Z\]{3}\[0-9\]{6}\s```
 
     - Select **String match**
 
@@ -93,13 +93,14 @@ generated](./media/image7.png)
 9. In the new right-side pane **Add a keyword list**, enter the
     following:
 
-    - **ID**: **```Employee ID keywords```**
+    - **ID**: ```Employee ID keywords```
 
     - **Case insensitive**:
 
-```Employee```
-
-```ID```
+```
+Employee
+ID
+```
 
 10. Select the radial for ***Word match*** under the **Case
     Sensitive** field
@@ -157,10 +158,10 @@ Birthdate, StreetAddress, and EmployeeID.
 ![A screenshot of a computer Description automatically
 generated](./media/image13.png)
 
-2.  In the **Name** field, enter **```employeedb```**.
+2.  In the **Name** field, enter ```employeedb```.
 
 3.  In the **Description** field,
-    enter **```Employee Database schema.```**.
+    enter ```Employee Database schema.```.
 
 4.  Enable **Ignore delimiters and punctuation for all schema fields**.
 
@@ -174,7 +175,7 @@ generated](./media/image14.png)
 ![Graphical user interface, application Description automatically
 generated](./media/image15.png)
 
-6.  In the first Schema field name, enter **```Name```** and mark
+6.  In the first Schema field name, enter ```Name``` and mark
     the **Field is searchable** box.
 
 7.  Select **+ Add schema data field** from the lower end.
@@ -182,17 +183,17 @@ generated](./media/image15.png)
 ![BrokenImage](./media/image16.png)
 
 8.  In **Schema field name**, below **Schema field \#2**,
-    enter **```Birthdate```**.
+    enter ```Birthdate```.
 
 9.  Select **+ Add schema data field** from the lower end again.
 
 10. In **Schema field name**, below **Schema field \#3**,
-    enter **```StreetAddress```**.
+    enter ```StreetAddress```.
 
 11. Select **+ Add schema data field** from the lower end a last time.
 
 12. In **Schema field name**, below **Schema field \#4**,
-    enter **```EmployeeID```**.
+    enter ```EmployeeID```.
 
 13. Select **Field is searchable**.
 
@@ -260,10 +261,10 @@ generated](./media/image25.png)
 automatically generated](./media/image26.png)
 
 27. In the **Name and describe your EDM sensitive info type** page,
-    enter **```Contoso Employee EDM```** for the name.
+    enter ```Contoso Employee EDM``` for the name.
 
-28. In the **Description for admins** field, enter **```EDM-based
-    sensitive information type for employee personal information.```**.
+28. In the **Description for admins** field, enter ```EDM-based
+    sensitive information type for employee personal information.```.
     Select **Next.**
 
 ![Graphical user interface, text, application Description automatically
@@ -293,7 +294,7 @@ sensitive data, hashing and uploading the actual data for the sensitive
 information type via the EDM Upload Agent tool is required next.
 
 1.  In **Microsoft Edge**, navigate
-    to **```https://go.microsoft.com/fwlink/?linkid=2088639```** to
+    to ```https://go.microsoft.com/fwlink/?linkid=2088639``` to
     access the EDM download agent.
 
 2.  Select **Run** to download and install the tool.
@@ -323,13 +324,13 @@ information type via the EDM Upload Agent tool is required next.
 
     - Enter the following text to the first line in the notepad window:
 
-**```Name,Birthdate,StreetAddress,EmployeeID```**
+```
+Name,Birthdate,StreetAddress,EmployeeID
+Patti Fernandez,01.06.1980,1Main Street,CSO123456
+Christie Cline,31.01.1985,2Secondary Street,CSO654321
+```
 
-**```Patti Fernandez,01.06.1980,1Main Street,CSO123456```**
-
-**```Christie Cline,31.01.1985,2Secondary Street,CSO654321```**
-
-4.  Select File and Save As: **```EmployeeData.csv```**
+4.  Select File and Save As: ```EmployeeData.csv```
 
 5.  Select the dropdown at **Save as type:** and select **All Files
     (*.*)**.
@@ -350,23 +351,23 @@ information type via the EDM Upload Agent tool is required next.
 
 10. Navigate to the EDM Upload Agent directory:
 
-**```cd "C:\Program Files\Microsoft\EdmUploadAgent"```**
+```cd "C:\Program Files\Microsoft\EdmUploadAgent"```
 
 ![Text Description automatically generated](./media/image33.png)
 
 11. Authorize with your Account to upload the database to your tenant by
     running the following cmdlet:
 
-**```.\EdmUploadAgent.exe /Authorize```**
+```.\EdmUploadAgent.exe /Authorize```
 
 ![BrokenImage](./media/image34.png)
 
 12. When the **Pick an account** window is displayed, log in as **Patti
-    Fernandez** using the username **PattiF@{TENANTPREFIX}.onmicrosoft.com**
+    Fernandez** using the username ```PattiF@{TENANTPREFIX}.onmicrosoft.com```
     and the User Password given on your resources tab. (Or the new
     password you reset.)
 
-Note: For the next steps, please make sure that the path of the files
+**Note**: For the next steps, please make sure that the path of the files
 resembles the path in your VM. It may be different than the instructions
 or the screenshots. In such case please change the path of your file in
 the commands accordingly.
@@ -375,8 +376,7 @@ the commands accordingly.
     classification sensitive information type by running the following
     script in PowerShell:
 
-**```.\EdmUploadAgent.exe /SaveSchema /DataStoreNameemployeedb /OutputDir
-”C:\Users\Admin\Documents\\```**
+```.\EdmUploadAgent.exe /SaveSchema /DataStoreNameemployeedb /OutputDir ”C:\Users\Admin\Documents\```
 
 **Note**: If the last command fails, it possibly takes more time until
 the **EDM_DataUploaders** group membership is applied. It can take up to
@@ -390,7 +390,7 @@ path the documents folder on your VM.
     sensitive information type by running the following script in
     PowerShell:
 
-**```.\EdmUploadAgent.exe /UploadData/DataStoreName employeedb /DataFileC:\Users\Admin\Documents\EmployeeData.csv /HashLocation C:\Users\Admin\Documents\\/SchemaC:\Users\Admin\Documents\employeedb.xml```**
+```.\EdmUploadAgent.exe /UploadData/DataStoreName employeedb /DataFile C:\Users\Admin\Documents\EmployeeData.csv /HashLocation C:\Users\Admin\Documents\ /Schema C:\Users\Admin\Documents\employeedb.xml```
 
 ![BrokenImage](./media/image36.png)
 
@@ -407,7 +407,7 @@ Check the path where you saved the file EmployeeData.csv
 15. Check the upload progress until the state changes to completed then
     run the following PowerShell command:
 
-**```.\EdmUploadAgent.exe /GetSession /DataStoreNameemployeedb```**
+```.\EdmUploadAgent.exe /GetSession /DataStoreNameemployeedb```
 
 ![BrokenImage](./media/image38.png)
 
@@ -422,8 +422,8 @@ happened the reason for illness or disease was sent out. We do not want
 that to happen.
 
 1.  In **Microsoft Edge**, open a **New InPrivate Window**, navigate
-    to **```https://purview.microsoft.com```** and log in as **Patti
-    Fernandez** using the username **PattiF@{TENANTPREFIX}.onmicrosoft.com**
+    to ```https://purview.microsoft.com``` and log in as **Patti
+    Fernandez** using the username ```PattiF@{TENANTPREFIX}.onmicrosoft.com```
     and the User Password given on your resources tab.
 
 2.  From the left navigation, select **Solutions** \> **Data Loss
@@ -441,9 +441,9 @@ generated](./media/image2.png)
 
 4.  On the **Name your sensitive info type** page, enter the following:
 
-    - Name: **```Contoso Diseases List```**
+    - Name: ```Contoso Diseases List```
 
-    - Description: **```List of possible diseases of employees.```**
+    - Description: ```List of possible diseases of employees.```
 
 ![Graphical user interface, application, Teams Description automatically
 generated](./media/image39.png)
@@ -463,20 +463,18 @@ generated](./media/image40.png)
 generated](./media/image41.png)
 
 8.  In the **Add a keyword dictionary** page enter the
-    name **```*Diseases Dictionary*```**.
+    name ```*Diseases Dictionary*```.
 
 9.  In the **Keywords** area enter the following keywords, each into a
     separate line:
 
-**```flu**
-
-**influenza**
-
-**cold**
-
-**bronchitis**
-
-**otitis```**
+```
+flu
+influenza
+cold
+bronchitis
+otitis
+```
 
 ![BrokenImage](./media/image42.png)
 
@@ -493,11 +491,11 @@ generated](./media/image43.png)
     the **ID** field. In the **Case insensitive** box, enter the
     following keywords, each into a separate line:
 
-**```employee**
-
-**absence**
-
-**reason```**
+```
+employee
+absence
+reason
+```
 
 ![Graphical user interface, application Description automatically
 generated](./media/image44.png)
@@ -545,8 +543,8 @@ malfunctioning custom search pattern.
 
 2.  Enter the following text to the notepad window:
 
-**```Employee Patti Fernandez EMP123456 is on absence because of the
-flu/influenza```**
+```Employee Patti Fernandez EMP123456 is on absence because of the
+flu/influenza```
 
 3.  Select **File** and Save As **SickTestData** and select **Save**.
 
@@ -555,7 +553,7 @@ flu/influenza```**
 5.  In **Microsoft Edge**, the Microsoft Purview portal tab should still
     be open. If so, select it and proceed to the next step. If you
     closed it, then in a new tab, navigate
-    to **```https://purview.microsoft.com```**. Log in as **Patti
+    to ```https://purview.microsoft.com```. Log in as **Patti
     Fernandez** using the username **PattiF@{TENANTPREFIX}.onmicrosoft.com**
     and the User Password given on your resources tab.
 
@@ -599,7 +597,7 @@ generated](./media/image53.png)
 generated](./media/image55.png)
 
 13. Back on the **Data classification** page, select the Sensitive
-    Information Type with the name **Contoso Diseases** **List**.
+    Information Type with the name **Contoso Diseases List**.
 
 14. In the right side pane, select **Test**.
 
