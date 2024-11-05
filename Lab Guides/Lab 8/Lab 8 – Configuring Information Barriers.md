@@ -7,7 +7,13 @@ and *Manufacturing*. In order to remain compliant with industry
 regulations, users in some departments aren't supposed to communicate
 with other departments, as listed in the following table:
 
-[TABLE]
+| Segment       | Can communicate with         | Can't communicate with            |
+|---------------|------------------------------|-----------------------------------|
+| HR            | Everyone                     | (no restrictions)                 |
+| Sales         | HR, Marketing, Manufacturing | Research                          |
+| Marketing     | Everyone                     | (no restrictions)                 |
+| Research      | HR, Marketing, Manufacturing | Sales                             |
+| Manufacturing | HR, Marketing                | Anyone other than HR or Marketing |
 
 For this structure, Contoso's plan includes three IB policies:
 
@@ -29,7 +35,7 @@ For this structure, Contoso's plan includes three IB policies:
 
 2.  Run the following:
 
-**```Install-ModuleExchangeOnlineManagement```**
+**```Install-Module ExchangeOnlineManagement```**
 
 3.  If prompted ‘**Do you want PowerShellGet to install and import the
     NuGet provider now?**’ and ‘**Are you sure you want to install the
@@ -172,7 +178,7 @@ generated](./media/image18.png)
 
 2.  Run the following:
 
-**```Import-ModuleExchangeOnlineManagement```**
+**```Import-Module ExchangeOnlineManagement```**
 
 ![A screenshot of a computer Description automatically
 generated](./media/image19.png)
