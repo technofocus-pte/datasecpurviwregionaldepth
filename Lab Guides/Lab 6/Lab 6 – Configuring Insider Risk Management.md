@@ -138,7 +138,7 @@ generated](./media/image15.png)
 10. Sign in to ```https://security.microsoft.com/``` using
     your **MOD Administrator** account on your Lab VM.
 
-11. Select **Settings** \> **Device** **onboarding**.
+11. Select **Settings** \> **Device onboarding**.
 
 ![](./media/image16.png)
 
