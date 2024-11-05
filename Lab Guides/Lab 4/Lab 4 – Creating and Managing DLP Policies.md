@@ -21,7 +21,7 @@ will be implemented in test mode because you do not want the block
 action to affect your users yet.
 
 1.  In **Microsoft Edge**, navigate
-    to **```https://purview.microsoft.com```** and make sure you are
+    to ```https://purview.microsoft.com``` and make sure you are
     logged into the **Microsoft Purview** portal as **Patti Fernandez**.
 
 2.  In the **Microsoft Purview** portal, in the left navigation pane,
@@ -43,8 +43,8 @@ action to affect your users yet.
 ![](./media/image3.png)
 
 5.  On the **Name your DLP policy** page,
-    type **```Credit Card DLP Policy```** in the **Name** field
-    and **```Protect credit card numbers from being shared.```** in
+    type ```Credit Card DLP Policy``` in the **Name** field
+    and ```Protect credit card numbers from being shared.``` in
     the **Description** field. Select **Next**.
 
 ![A screenshot of a computer Description automatically
@@ -71,8 +71,7 @@ generated](./media/image6.png)
 ![A screenshot of a computer Description automatically
 generated](./media/image7.png)
 
-10. On the **Create rule** page, type **```Credit card
-    information```** in the **Name** field.
+10. On the **Create rule** page, type ```Credit card information``` in the **Name** field.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image8.png)
@@ -134,7 +133,7 @@ generated](./media/image16.png)
 **Note**: If you were not able to select the check box of **Allow
 overrides from M365 services**, enable the check box of **Notify users
 in Office 365 with a policy tip** which can be found on the **Create
-rule** page under the **User notification \>\\ \>Microsoft 365
+rule** page under the **User notification** > **Microsoft 365
 services** section from the previous step. Then select the check box
 of **Allow overrides from M365 services. Allows users in Exchange,
 SharePoint, OneDrive and Teams to override policy restrictions.**
@@ -179,7 +178,7 @@ previous step to also scan e-mails for Credit Card information and
 inform users if they want to share this content in an e-mail.
 
 1.  In **Microsoft Edge**, navigate
-    to **```https://purview.microsoft.com```** and make sure you are
+    to ```https://purview.microsoft.com``` and make sure you are
     logged into the **Microsoft Purview** portal as **Patti Fernandez**.
 
 2.  In the **Microsoft Purview** portal, in the left navigation pane,
@@ -193,7 +192,7 @@ inform users if they want to share this content in an e-mail.
 
 ![](./media/image24.png)
 
-4.  On the **Name your DLP** **policy** and **Assign admin units** page,
+4.  On the **Name your DLP policy** and **Assign admin units** page,
     select **Next**.
 
 5.  On the **Choose locations to apply the policy** page, enable
@@ -227,7 +226,7 @@ EmployeeIDs.
 
 2.  In the **PowerShell** window, enter
 
-**```Connect-IPPSSession```**
+```Connect-IPPSSession```
 
 and then sign in as **Patti Fernandez.**
 
@@ -236,9 +235,9 @@ and then sign in as **Patti Fernandez.**
 Note: If it shows error try running the following commands one by one
 first and then execute the step again.
 
-**```Install-Module ExchangeOnlineManagement```**
+```Install-Module ExchangeOnlineManagement```
 
-**```Import-Module ExchangeOnlineManagement```**
+```Import-Module ExchangeOnlineManagement```
 
 If it shows error try running the following commands one by one first
 and then execute the step again. If you still face any error, download
@@ -248,24 +247,21 @@ the following file and install it before proceeding further.
 3.  Enter the following command into PowerShell to create a DLP policy
     that scans all Exchange mailboxes:
 
-**```New-DlpCompliancePolicy -Name"EmployeeID DLP Policy" -Comment "This
-policy blocks sharing of Employee IDs" -ExchangeLocation All```**
+```New-DlpCompliancePolicy -Name"EmployeeID DLP Policy" -Comment "This
+policy blocks sharing of Employee IDs" -ExchangeLocation All```
 
 ![BrokenImage](./media/image29.png)
 
 4.  Enter the following command into PowerShell to add a DLP rule to the
     DLP policy you created in the previous step:
 
-**```New-DlpComplianceRule -Name"EmployeeID DLP rule" -Policy
-"EmployeeID DLP Policy" -BlockAccess
-$true -ContentContainsSensitiveInformation @{Name="Contoso Employee
-IDs"}```**
+```New-DlpComplianceRule -Name"EmployeeID DLP rule" -Policy "EmployeeID DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="Contoso Employee IDs"}```
 
 ![Text Description automatically generated](./media/image30.png)
 
 5.  Use the following command to review the **EmployeeID DLP rule**:
 
-**```Get-DLPComplianceRule -Identity "EmployeeID DLP rule"```**
+```Get-DLPComplianceRule -Identity "EmployeeID DLP rule"```
 
 ![Text Description automatically generated](./media/image31.png)
 
@@ -278,11 +274,11 @@ In this task, you will activate the credit card information DLP policy
 you created in test mode so it enforces its protective actions.
 
 1.  In **Microsoft Edge**, navigate
-    to **```https://purview.microsoft.com```** and make sure you are
+    to ```https://purview.microsoft.com``` and make sure you are
     logged into the **Microsoft Purview** portal as **Patti Fernandez**.
 
 2.  In the **Microsoft Purview** portal, in the left navigation pane,
-    select **Solutions** \> **Data loss prevention**.
+    select **Solutions** > **Data loss prevention**.
 
 ![](./media/image1.png)
 
@@ -322,7 +318,7 @@ restrictive policy. For this reason, you want to move the EmployeeID DLP
 Policy into the higher priority.
 
 1.  In **Microsoft Edge**, navigate
-    to **```https://purview.microsoft.com```** and make sure you are
+    to ```https://purview.microsoft.com``` and make sure you are
     logged into the **Microsoft Purview** portal as **Patti Fernandez**.
 
 2.  In the **Microsoft Purview** portal, in the left navigation pane,
@@ -357,7 +353,7 @@ create a file policy, you need to enable file monitoring so Microsoft
 365 Defender can scan files in your organization.
 
 1.  Open **Microsoft Edge** and navigate
-    to **```https://security.microsoft.com```** and log into the
+    to ```https://security.microsoft.com``` and log into the
     Microsoft 365 Defender portal as **MOD Administrator**.
 
 2.  In the navigation select **Cloud apps** \> **Files** from the menu.
@@ -382,7 +378,7 @@ to scan files in OneDrive and SharePoint Online and automatically
 quarantine files containing credit card information if they are shared.
 
 1.  Open **Microsoft Edge** and navigate
-    to **```https://security.microsoft.com```** and log into the
+    to ```https://security.microsoft.com``` and log into the
     Microsoft 365 Defender portal as **MOD Administrator**.
 
 2.  In the navigation select **Settings** under **System**, and
@@ -425,9 +421,9 @@ quarantine files containing credit card information if they are shared.
 generated](./media/image42.png)
 
 9.  On the **Create file policy** page,
-    type **```Credit Card Information for files```** in the **Policy
-    name** field, and type **```Protect credit card numbers from being
-    shared in files.```** in the **Description** field.
+    type ```Credit Card Information for files``` in the **Policy
+    name** field, and type ```Protect credit card numbers from being
+    shared in files.``` in the **Description** field.
 
 ![Graphical user interface, application Description automatically
 generated](./media/image43.png)
@@ -519,7 +515,7 @@ prevents the creation of flows that will share data between SharePoint
 Online and Apps defined as non-business.
 
 1.  In **Microsoft Edge**, navigate
-    to **```https://admin.powerplatform.microsoft.com```** and log into
+    to ```https://admin.powerplatform.microsoft.com``` and log into
     the Power Platform admin center as **MOD Administrator**.
 
 2.  In the **Power Platform admin center**, in the left navigation pane,
@@ -533,8 +529,8 @@ Online and Apps defined as non-business.
 ![Graphical user interface, application, Teams Description automatically
 generated](./media/image56.png)
 
-4.  On the **Name your policy** page, type **```Tenant-wide SharePoint
-    Policy```**, then select **Next**.
+4.  On the **Name your policy** page, type ```Tenant-wide SharePoint
+    Policy```, then select **Next**.
 
 ![Graphical user interface, text, application Description automatically
 generated](./media/image57.png)
@@ -577,12 +573,8 @@ connector that is not Salesforce.
 
 ## Exercise 3 – Enabling Adaptive Protection
 
-It will take around 72 hours for the Adaptive Protection to be enabled
-on your tenant. Enabling Adaptive Protection is necessary for the
-**Optional Lab - Exploring the capabilities of Adaptive Protection**.
-
 1.  In **Microsoft Edge**, navigate
-    to **```https://purview.microsoft.com```** and log into the purview
+    to ```https://purview.microsoft.com``` and log into the purview
     portal as **MOD Administrator**.
 
 2.  From the left navigation pane, select **Solutions** \> **Insider
