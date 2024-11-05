@@ -109,7 +109,7 @@ generated](./media/image8.png)
     credentials for MOD Administration, given on the resources tab of
     your environment.
 
-2.  In the left navigation pane, select **Information barriers**.
+2.  In the left navigation pane, select **Solutions** > **Information barriers**.
 
 ![](./media/image9.png)
 
