@@ -31,7 +31,7 @@ and "ID".
     to ```https://purview.microsoft.com``` and log in as
     **Patti Fernandez** using the
     username ```PattiF@{TENANTPREFIX}.onmicrosoft.com``` and the User Password
-    given on your resources tab.
+    given on your resources tab. If asked, agree to the terms and conditions and select **Get started**.
 
 2.  From the left navigation, select **Solutions** \> **Data Loss
     Prevention**.
