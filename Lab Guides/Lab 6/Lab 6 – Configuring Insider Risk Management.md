@@ -37,7 +37,7 @@ User password
 #### Step 1 – Add users to Insider risk management role group
 
 1.  If the Microsoft Purview portal is open continue to step 2,
-    otherwise, open the **```https://purview.microsoft.com```** and log
+    otherwise, open the ```https://purview.microsoft.com``` and log
     in with the **MOD Administrator** credentials.
 
 ![](./media/image1.png)
@@ -123,7 +123,7 @@ generated](./media/image13.png)
 generated](./media/image14.png)
 
 7.  Once the install is completed, go again to windows security again
-    and check that Antimalware Client Version is **4.18.2110** or newer.
+    and check that A**ntimalware Client Version** is **4.18.2110** or newer.
     If not, repeat the steps 5 and 6, till the VM is updated.
 
 ![A screenshot of a computer Description automatically
@@ -135,7 +135,7 @@ generated](./media/image15.png)
 9.  Repeat the steps from 1 to 7 to
     update **Adeles-Device** and **Christies-Device**.
 
-10. Sign in to ```**https://security.microsoft.com/```** using
+10. Sign in to ```https://security.microsoft.com/``` using
     your **MOD Administrator** account on your Lab VM.
 
 11. Select **Settings** \> **Device** **onboarding**.
@@ -195,7 +195,7 @@ generated](./media/image24.png)
     and run the command below. The Command Prompt window will close
     automatically.
 
-**```powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyleHidden $ErrorActionPreference= 'silentlycontinue';(New-ObjectSystem.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe','C:\test-WDATP-test\invoice.exe');Start-Process 'C:\test-WDATP-test\invoice.exe'```**
+```powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyleHidden $ErrorActionPreference= 'silentlycontinue';(New-ObjectSystem.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe','C:\test-WDATP-test\invoice.exe');Start-Process 'C:\test-WDATP-test\invoice.exe'```
 
 ![Text Description automatically generated](./media/image25.png)
 
@@ -214,9 +214,9 @@ generated](./media/image26.png)
     respectively to onboard them as Devices in **Microsoft 365
     Defender** portal.
 
-25. Open the **```https://purview.microsoft.com```** and log in with the
+25. Open the ```https://purview.microsoft.com``` and log in with the
     username **<pattif@{TENANTPREFIX}.onmicrosoft.com>** and the User
-    password. (replace WWLxXXXXXX with your tenant prefix given on the
+    password. (replace {TENANTPREFIX} with your tenant prefix given on the
     resources tab).
 
 26. Open the **settings** by clicking on the settings in the navigation
@@ -234,9 +234,9 @@ to be enabled, please allow up to 30 minutes.
 #### Step 1 – Create a new policy
 
 1.  If you closed the browser window in the previous task, open
-    the **```https://purview.microsoft.com```** and log in with the
+    the ```https://purview.microsoft.com``` and log in with the
     username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the User
-    password. (replace WWLxXXXXXX with your tenant prefix given on the
+    password. (replace {TENANTPREFIX} with your tenant prefix given on the
     resources tab).
 
 2.  Go to **Insider Risk Management** and select the **Policies** tab.
@@ -244,8 +244,8 @@ to be enabled, please allow up to 30 minutes.
 
 ![](./media/image27.png)
 
-3.  On the Choose a policy template page, choose Risky browser usage
-    (preview), under Risky browser usage (preview).
+3.  On the **Choose a policy template** page, choose **Risky browser usage
+    (preview)**, under **Risky browser usage (preview)**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image28.png)
@@ -262,18 +262,17 @@ generated](./media/image30.png)
 
 6.  On the **Name and description** page, complete the following fields:
 
-    - Name (required): Risky usage of browser
+    - Name (required): ```Risky usage of browser```
 
-    - Description (optional): This is a test policy for the risky
-      browser usage.
+    - Description (optional): ```This is a test policy for the risky browser usage.```
 
 7.  Select **Next** to continue.
 
 ![Graphical user interface, text, application Description automatically
 generated](./media/image31.png)
 
-8.  On the Choose users and groups page, select Include all users and
-    groups. Select Next to continue.
+8.  On the **Choose users and groups** page, select Include all users and
+    groups. Select **Next** to continue.
 
 ![Graphical user interface, text, application Description automatically
 generated](./media/image31.png)
@@ -281,35 +280,36 @@ generated](./media/image31.png)
 ![A screenshot of a computer Description automatically
 generated](./media/image32.png)
 
-9.  On the Decide whether to prioritize page, select I don't want to
+9.   On the **Exclude users and groups** page, select **Next**. 
+10.  On the Decide whether to prioritize page, select I don't want to
     specify priority content right now (you'll be able to do this after
     the policy is created). Select Next to continue.
 
 ![Graphical user interface, text, application Description automatically
 generated](./media/image33.png)
 
-10. On the Triggers for this policy page, select Turn on indicators.
+11. On the **Triggers for this policy** page, select **Turn on indicators**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image34.png)
 
-11. On Choose indicators to turn on, select Select all under Risky
-    browsing indicators (preview), and uncheck rest of the boxes.
+12. On **Choose indicators to turn on**, select S**elect all under Risky
+    browsing indicators (preview)**, and uncheck rest of the boxes.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image35.png)
 
-12. Scroll down and select **Save**.
+13. Scroll down and select **Save**.
 
-13. On Triggers for this policy, under Select which activities will
-    trigger this policy. Select all the options and click on Next.
+14. On **Triggers for this policy**, under Select which activities will
+    trigger this policy. Select all the options and click on **Next**.
 
 ![Graphical user interface, text, application Description automatically
 generated](./media/image36.png)
 
-14. On Triggering thresholds for this policy page, select Use custom
-    thresholds (Recommended), change all the thresholds to 1 per day and
-    then select Next.
+15. On **Triggering thresholds for this policy** page, select **Use custom
+    thresholds (Recommended)**, change all the thresholds to **1** per day and
+    then select **Next**.
 
 ![Graphical user interface, application Description automatically
 generated](./media/image37.png)
@@ -317,48 +317,48 @@ generated](./media/image37.png)
 ![A screenshot of a computer Description automatically
 generated](./media/image38.png)
 
-15. On **indicators** page, select **Next**.
+16. On **indicators** page, select **Next**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image39.png)
 
-16. On Decide whether to use default or custom indicator thresholds,
-    select Use default thresholds for all indicators, then select Next.
+17. On **Decide whether to use default or custom indicator thresholds**,
+    select **Use default thresholds for all indicators**, then select **Next**.
 
 ![Graphical user interface, text, application Description automatically
 generated](./media/image40.png)
 
-17. On Review settings and finish, select Submit.
+18. On **Review settings and finish**, select **Submit**.
 
 ![Graphical user interface, text, application Description automatically
 generated](./media/image41.png)
 
-18. On Your policy was created, select Done.
+19. On Your policy was created, select **Done**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image42.png)
 
-19. Keep the tab open and continue to the next task.
+20. Keep the tab open and continue to the next task.
 
 #### Step 2 – Score the policy
 
-1.  Click on the new policy named Risky usage of browser. Select Start
-    scoring activity for users.
+1.  Click on the new policy named R**isky usage of browser**. Select **Start
+    scoring activity for users**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image43.png)
 
-2.  In the Reason field in the Add users to multiple policies pane,
-    type Testing the policy.
+2.  In the **Reason** field in the **Add users to multiple policies pane**,
+    type ```Testing the policy```.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image44.png)
 
-3.  In the This should last for (choose between 5 and 30 days) field,
-    select 10 days.
+3.  In the **This should last for (choose between 5 and 30 days)** field,
+    select **10** days.
 
-4.  Use the Search user to add to policies field. Add Brooke, Connie,
-    and Chris. Then click on Start scoring activity.
+4.  Use the Search user to add to policies field. Add **Patti**, **Adele**,
+    and **Christie**. Then click on **Start scoring activity**.
 
 ![A screenshot of a computer screen Description automatically generated
 with medium confidence](./media/image45.png)
@@ -374,9 +374,9 @@ with medium confidence](./media/image46.png)
 #### Step 1 – Create a new policy
 
 1.  If you closed the browser window in the previous task, open
-    the **```https://purview.microsoft.com```** and log in with the
+    the ```https://purview.microsoft.com``` and log in with the
     username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the User
-    password. (replace WWLxXXXXXX with your tenant prefix given on the
+    password. (replace {TENANTPREFIX} with your tenant prefix given on the
     resources tab).
 
 2.  Go to **Insider Risk Management** and select the **Policies** tab.
@@ -384,128 +384,128 @@ with medium confidence](./media/image46.png)
 
 ![](./media/image27.png)
 
-3.  On the Choose a policy template page, choose Data theft by departing
-    users, under Data theft. Select Next to continue.
+3.  On the** Choose a policy template** page, choose **Data theft by departing
+    users**, under **Data theft**. Select **Next** to continue.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image47.png)
 
 4.  On the **Name and description** page, complete the following fields:
 
-    - Name (required): Data theft by a user
+    - Name (required): ```Data theft by a user```
 
-    - Description (optional): This is a test policy forthe preventing
-      data theft.
+    - Description (optional): ```This is a test policy forthe preventing data theft.```
 
 5.  Select **Next** to continue.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image48.png)
 
-6.  On the Choose users and groups page, select Include all users and
-    groups. Select Next to continue.
+6.  On the **Choose users and groups** page, select **Include all users and
+    groups**. Select **Next** to continue.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image32.png)
 
-7.  On the Decide whether to prioritize page, select I want to specify
-    priority content. Select the check box for Sensitivity
-    labels and Sensitive info types. Select Next to continue.
+7.  On the **Exclude users and groups** page, select **Next**.
+8.  On the **Decide whether to prioritize** page, select **I want to specify
+    priority content**. Select the check box for **Sensitivity
+    labels** and **Sensitive info types**. Select **Next** to continue.
 
 ![A screenshot of a computer screen Description automatically generated
 with medium confidence](./media/image49.png)
 
-8.  On the Sensitivity labels to prioritize page, select Add or edit
-    sensitivity labels. On the flyout pane, select Internal/Employee
-    data (HR) and select Add. Then click Next.
+9.  On the **Sensitivity labels to prioritize** page, select **Add or edit
+    sensitivity labels**. On the flyout pane, select **Internal/Employee
+    data (HR)** and select **Add**. Then click **Next**.
 
 ![A screenshot of a computer screen Description automatically generated
 with medium confidence](./media/image50.png)
 
-9.  On the Sensitive info types to prioritize page, select Add or edit
-    sensitive info types. On the flyout pane, search for and
-    select Credit Card Number, Contoso Employee ID and Contoso Employee
-    EDM. Select Add. Then click Next.
+10.  On the **Sensitive info types to prioritize** page, select **Add or edit
+    sensitive info types**. On the flyout pane, search for and
+    select **Credit Card Number**, **Contoso Employee ID** and **Contoso Employee
+    EDM**. Select **Add**. Then click **Next**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image51.png)
 
-10. On Decide whether to score only activity with priority content,
-    select Get alerts for all activity. Select Next.
+11. On **Decide whether to score only activity with priority content**,
+    select **Get alerts for all activity**. Select **Next**.
 
 ![A screenshot of a computer screen Description automatically generated
 with medium confidence](./media/image52.png)
 
-11. On triggers for this policy page, select the default and then
-    select Next.
+12. On **Triggers for this policy** page, select the default and then
+    select **Next**.
 
 ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image53.png)
 
-12. On **Indicators** page, select **Turn on indicators** from the
+13. On **Indicators** page, select **Turn on indicators** from the
     prompt.
 
 ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image54.png)
 
-13. Select Select all under Office indicators and click Save.
+14. Select **Select all under Office indicators** and click **Save**.
 
 ![A screenshot of a computer screen Description automatically generated
 with medium confidence](./media/image55.png)
 
-14. Select all the options and click on **Next**.
+15. Select all the options and click on **Next**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image56.png)
 
-15. On **Detection options** page, select the default and then
+16. On **Detection options** page, select the default and then
     select **Next**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image57.png)
 
-16. On **indicators** page, select **Next**.
+17. On **indicators** page, select **Next**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image39.png)
 
-17. On Decide whether to use default or custom indicator thresholds,
-    select Customise thresholds, use 1, 2, and 3 events for each stage
-    respectively then select Next.
+18. On **Decide whether to use default or custom indicator thresholds**,
+    select **Customise thresholds**, use **1**, **2**, and **3** events for each stage
+    respectively then select **Next**.
 
 ![A screenshot of a computer screen Description automatically
 generated](./media/image58.png)
 
-18. On Review settings and finish, select Submit.
+19. On **Review settings and finish**, select **Submit**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image59.png)
 
-19. On Your policy was created, select Done.
+20. On **Your policy was created**, select **Done**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image60.png)
 
-20. Keep the tab open and continue to the next task.
+21. Keep the tab open and continue to the next task.
 
 #### Step 2 – Score the policy
 
-1.  Click on the new policy named Data theft by a user. Select Start
-    scoring activity for users.
+1.  Click on the new policy named **Data theft by a user**. Select S**tart
+    scoring activity for users**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image61.png)
 
-2.  In the Reason field in the Add users to multiple policies pane,
-    type Testing the policy.
+2.  In the **Reason field in the Add users to multiple policies pane**,
+    type **Testing the policy**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image44.png)
 
-3.  In the This should last for (choose between 5 and 30 days) field,
-    select 10 days.
+3.  In the **This should last for (choose between 5 and 30 days) field**,
+    select **10** days.
 
-4.  Use the Search user to add to policies field. Add Peter. Then click
+4.  Use the **Search user to add to policies field**. Add **Pattie**. Then click
     on Start scoring activity.
 
 ![A screenshot of a computer screen Description automatically
@@ -522,9 +522,9 @@ generated](./media/image63.png)
 #### Step 1 – Create a new policy
 
 1.  If you closed the browser window in the previous task, open
-    the **```https://purview.microsoft.com```** and log in with the
+    the ```https://purview.microsoft.com``` and log in with the
     username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the User
-    password. (replace WWLxXXXXXX with your tenant prefix given on the
+    password. (replace {TENANTPREFIX} with your tenant prefix given on the
     resources tab).
 
 2.  Go to **Insider Risk Management** and select the **Policies** tab.
@@ -541,67 +541,67 @@ generated](./media/image64.png)
 
 4.  On the **Name and description** page, complete the following fields:
 
-    - Name (required): Data leaks by a user
+    - Name (required): ```Data leaks by a user```
 
-    - Description (optional): This is a test policy forthe preventing
-      data leaks.
+    - Description (optional): ```This is a test policy forthe preventing data leaks.```
 
 5.  Select **Next** to continue.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image65.png)
 
-6.  On the Choose users and groups page, select Include all users and
-    groups. Select Next to continue.
+6.  On the **Choose users and groups** page, select **Include all users and
+    groups**. Select **Next** to continue.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image32.png)
 
-7.  On the Decide whether to prioritize page, select I want to specify
-    priority content. Select the check box for SharePoint
-    sites, Sensitivity labels and Sensitive info types. Select Next to
+7.  On the **Exclude users and groups** page, select **Next**.
+8.  On the **Decide whether to prioritize** page, select **I want to specify
+    priority content**. Select the check box for **SharePoint
+    sites**, **Sensitivity labels** and **Sensitive info types**. Select **Next** to
     continue.
 
 ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image66.png)
 
-8.  On the SharePoint sites to prioritize page, select Add or edit
-    SharePoint sites. On the flyout pane,
-    select **https://wwlxXXXXXX.sharepoint.com/sites/ContosoWeb1** and
-    select Add. Then click Next.
+8.  On the SharePoint sites to prioritize page, select **Add or edit
+    SharePoint sites**. On the flyout pane,
+    select **https://{TENANTPREFIX}.sharepoint.com/sites/ContosoWeb1** and
+    select **Add**. Then click **Next**.
 
-9.  On the Sensitivity labels to prioritize page, select Add or edit
-    sensitivity labels. On the flyout pane, select Internal/Employee
-    data (HR) and select Add. Then click Next.
+9.  On the **Sensitivity labels to prioritize** page, select **Add or edit
+    sensitivity labels**. On the flyout pane, select **Internal/Employee
+    data (HR)** and select **Add**. Then click **Next**.
 
 ![A screenshot of a computer screen Description automatically generated
 with medium confidence](./media/image50.png)
 
-10. On the Sensitive info types to prioritize page, select Add or edit
-    sensitive info types. On the flyout pane, search for and
-    select Credit Card Number, Contoso Employee ID and Contoso Employee
-    EDM. Select Add. Then click Next.
+10. On the **Sensitive info types to prioritize** page, select **Add or edit
+    sensitive info types**. On the flyout pane, search for and
+    select **Credit Card Number**, **Contoso Employee ID** and **Contoso Employee
+    EDM**. Select **Add**. Then click **Next**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image51.png)
 
-11. On Decide whether to score only activity with priority content,
-    select Get alerts for all activity. Select Next.
+11. On **Decide whether to score only activity with priority content**,
+    select **Get alerts for all activity**. Select **Next**.
 
 ![A screenshot of a computer screen Description automatically generated
 with medium confidence](./media/image52.png)
 
-12. On triggers for this policy page, select Radio button near User
-    performs an exfiltration activity. Under select which activities
-    will trigger this policy, select all the available
-    options especially Download content from SharePoint. and then
-    select Next.
+12. On **Triggers for this policy** page, select Radio button near **User
+    performs an exfiltration activity**. Under S**elect which activities
+    will trigger this policy**, select all the available
+    options especially **Download content from SharePoint**. and then
+    select **Next**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image67.png)
 
-13. On Triggering thresholds for this policy, select Use custom
-    thresholds. Set every threshold to 1 and select Next.
+13. On **Triggering thresholds for this policy**, select **Use custom
+    thresholds**. Set every threshold to **1** and select **Next**.
 
 ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image68.png)
@@ -609,19 +609,19 @@ medium confidence](./media/image68.png)
 14. Select the default settings on the **Indicators** page and
     select **Next**.
 
-15. On Decide whether to use default or custom indicator thresholds,
-    select Customise thresholds, use 1, 2, and 3 events for each stage
-    respectively then select Next.
+15. On **Decide whether to use default or custom indicator thresholds**,
+    select **Customise thresholds**, use **1**, **2**, and **3** events for each stage
+    respectively then select **Next**.
 
 ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image69.png)
 
-16. On Review settings and finish, select Submit.
+16. On **Review settings and finish**, select **Submit**.
 
 ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image70.png)
 
-17. On Your policy was created, select Done.
+17. On **Your policy was created**, select **Done**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image71.png)
@@ -630,17 +630,17 @@ generated](./media/image71.png)
 
 #### Step 2 – Score the policy
 
-1.  Click on the new policy named Data leaks by a user. Select Start
-    scoring activity for users.
+1.  Click on the new policy named **Data leaks by a user**. Select **Start
+    scoring activity for users**.
 
 ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image72.png)
 
-2.  In the Reason field in the Add users to multiple policies pane,
-    type Testing the policy. In the This should last for (choose between
-    5 and 30 days) field, select 10 days. Use the Search user to add to
-    policies field. Add Brooke, Connie, and Chris. Then click on Start
-    scoring activity.
+2.  In the Reason field in the **Add users to multiple policies** pane,
+    type ```Testing the policy```. In the **This should last for (choose between
+    5 and 30 days)** field, select **10** days. Use the **Search user to add to
+    policies field**. Add **Patti**, **Adele**, and **Christie**. Then click on **Start
+    scoring activity**.
 
 ![A screenshot of a computer Description automatically generated with
 medium confidence](./media/image73.png)
