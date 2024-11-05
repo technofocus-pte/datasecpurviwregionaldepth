@@ -16,8 +16,8 @@ different SharePoint sites for identifying typical data created and
 stored by Contoso Ltd.
 
 1.  In **Microsoft Edge**, open a **New InPrivate Window**, navigate
-    to **```https://purview.microsoft.com```** and log in as **Patti
-    Fernandez** using the username **PattiF@WWLxXXXXXX.onmicrosoft.com**
+    to ```https://purview.microsoft.com``` and log in as **Patti
+    Fernandez** using the username ```PattiF@WWLx{TENANTPREFIX}.onmicrosoft.com```
     and the User Password given on your resources tab.
 
 2.  From the left navigation, select **Solutions** \> **Data Loss
@@ -35,10 +35,9 @@ generated](./media/image1.png)
 4. Enter the following information on the **Name and describe your
     trainable classifier** page:
 
-5. Name: **```Contoso Company Data```**
+5. Name: ```Contoso Company Data```
 
-6. Description: **```Trainable classifier for company data produced and
-    stored by Contoso Ltd.```**
+6. Description: ```Trainable classifier for company data produced and stored by Contoso Ltd.```
 
 7. Select **Next**.
 
