@@ -13,9 +13,16 @@ the devices in an organisation. We will learn how to onboard those
 devices in Azure AD and Intune, and install an MDM agent on them, so
 that they can be used to get the alerts from those machines.
 
+**Note**: The configurations in the screenshots may not be exactly the same
+as some features keep on updating in Azure. Please follow the
+instructions thoroughly and refer to the screenshots for finding the
+buttons or the areas of interest.
+
 ## Exercise 1: Set up the environment
 
 ### Task 0 : Synchronize the VM clock
+
+**Note**: While reedming the Azure Pass you may be asked for Multi-factor Authentication. In that case you will be redirected to the MFA wizard which will guide you through the process of setting up MFA. You can either use your phone number or Microsoft Authenticator app on your phone to set up the authentication.
 
 1.  After logging into the VM, select the windows icon. Then search
     for **Date and time**, and select **Date and time settings**.
@@ -39,7 +46,7 @@ medium confidence](./media/image3.png)
 
 #### Redeeming a Microsoft Azure Pass Promo Code
 
-1.  Open a browser and navigate to: **```www.microsoftazurepass.com```**
+1.  Open a browser and navigate to: ```www.microsoftazurepass.com```
 
 It is recommended you close all browsers and open a new In-Private
 Browser session. Other log-ins can persist and cause errors during the
@@ -59,7 +66,7 @@ activation step.
 ![](./media/image6.png)
 
 5.  Enter your **Azure Pass** promo code in the Enter Promo code box and
-    click “**Claim Promo** **Code**”.
+    click “**Claim Promo Code**”.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image7.png)
@@ -112,7 +119,7 @@ generated](./media/image13.png)
 generated](./media/image14.png)
 
 4.  In the **Set up a work or school account** prompt, click on **Join
-    this device to** **Microsoft Entra ID**.
+    this device to Microsoft Entra ID**.
 
 ![](./media/image15.png)
 
@@ -158,12 +165,7 @@ medium confidence](./media/image21.png)
 
 ### Task 3: Create VMs to replicate an organization’s Structure.
 
-Note: The configurations in the screenshots may not be exactly the same
-as some features keep on updating in Azure. Please follow the
-instructions thoroughly and refer to the screenshots for finding the
-buttons or the areas of interest.
-
-1.  On the **Azure portal** **```https://portal.azure.com```** menu or
+1.  On the **Azure portal** ```https://portal.azure.com``` menu or
     from the **Home** page, select **Create a resource**.
 
 2.  Select **Create** under **Virtual Machines**.
@@ -173,7 +175,16 @@ generated](./media/image22.png)
 
 3.  Enter these values for the virtual machine:
 
-[TABLE]
+
+| Setting                 | Value                                                                                                                                       |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| Resource group          | Click on **Create new** > ```ContosoDevices``` > Click on **Ok**                                                                        |
+| Virtual machine name    | ```Pattis-Device```                                                                                                                     |
+| Region                  | **(Asia Pacific) Australia EastUS** (You can use any other region as per availability of the VM images like DS1 or DS2 variants)            |
+| Security                | Standard                                                                                                                                    |
+| Image                   | Windows 10 Pro, Version 22H2 – x64 Gen2                                                                                                     |
+| Administrator user name | ```Admin01```                                                                                                                               |
+| Password                | ```Pa$$.w0rd@123```                                                                                                                         |
 
 ![A screenshot of a computer Description automatically
 generated](./media/image23.png)
@@ -200,16 +211,33 @@ medium confidence](./media/image26.png)
 8.  Create 2 other VMs using the same steps and the following
     information.
 
-[TABLE]
+| Setting                 | Value                                                                                                                                       |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| Resource group          | Select **ContosoDevices**                                                 						                        |
+| Virtual machine name    | ```Adeles-Device```                                                                                                                     |
+| Region                  | **(Asia Pacific) Australia EastUS** (You can use any other region as per availability of the VM images like DS1 or DS2 variants)            |
+| Security                | Standard                                                                                                                                    |
+| Image                   | Windows 10 Pro, Version 22H2 – x64 Gen2                                                                                                     |
+| Administrator user name | ```Admin01```                                                                                                                               |
+| Password                | ```Pa$$.w0rd@123``
 
-[TABLE]
+
+| Setting                 | Value                                                                                                                                       |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| Resource group          | Select **ContosoDevices**                                                          						                |
+| Virtual machine name    | ```Christie-Device```                                                                                                                   |
+| Region                  | **(Asia Pacific) Australia EastUS** (You can use any other region as per availability of the VM images like DS1 or DS2 variants)            |
+| Security                | Standard                                                                                                                                    |
+| Image                   | Windows 10 Pro, Version 22H2 – x64 Gen2                                                                                                     |
+| Administrator user name | ```Admin01```                                                                                                                               |
+| Password                | ```Pa$$.w0rd@123``
 
 9.  You can open the RDP files and use the following local credentials
     to log in sign in to these Virtual Machines.
 
-    - User Name: **```Admin01```**
+    - User Name: ```Admin01```
 
-    - Password: **```Pa55.w0rd@123```**
+    - Password: ```Pa$$.w0rd@123```
 
 ### Task 4: Enrol the VMs in Azure AD as different users
 
@@ -233,13 +261,13 @@ generated](./media/image13.png)
 generated](./media/image14.png)
 
 5.  In the **Set up a work or school account** prompt, click on **Join
-    this device to** **Microsoft Entra ID**.
+    this device to Microsoft Entra ID**.
 
 ![](./media/image15.png)
 
 6.  In the sign in prompt, sign in with the
     username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the User
-    password. (replace WWLxXXXXXX with your tenant prefix given on the
+    password. (replace {TENANTPREFIX} with your tenant prefix given on the
     resources tab).
 
 7.  Press **Join** in the prompt **Make sure this is your**
@@ -258,7 +286,7 @@ generated](./media/image14.png)
 
 10. In the Set up a work or school account prompt, sign in with
     username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the User
-    password. (replace WWLxXXXXXX with your tenant prefix given on the
+    password. (replace {TENANTPREFIX} with your tenant prefix given on the
     resources tab).
 
 11. It will take a couple of minutes to sign in.
@@ -274,7 +302,7 @@ automatically generated](./media/image31.png)
 
 13. On your **Settings \>Accounts \>Access work or school** page, you
     will see Patti Fernandez’s account connected twice. Expand the one
-    that says **Connected to Contoso** **MDM.**
+    that says **Connected to Contoso MDM.**
 
 ![](./media/image32.png)
 
@@ -282,8 +310,8 @@ automatically generated](./media/image31.png)
 
 ![](./media/image33.png)
 
-15. On the **Settings** \>**Accounts** \>**Access work or school**
-    \>**Managed by Contoso**, under **Device sync status**, click
+15. On the **Settings** \> **Accounts** \>  **Access work or school**
+    \> **Managed by Contoso**, under **Device sync status**, click
     on **Sync**.
 
 ![](./media/image34.png)
@@ -306,21 +334,21 @@ generated with medium confidence](./media/image36.png)
 with low confidence](./media/image37.png)
 
 19. Sign in with username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the
-    User password. (replace WWLxXXXXXX with your tenant prefix given on
+    User password. (replace {TENANTPREFIX} with your tenant prefix given on
     the resources tab). If asked for the confirmation, click on **Yes**.
 
 20. Open the RDP file of Adele’s device and following the same 1 t0 19
     steps as we did for Patti’s device, enroll the device in Microsoft
     Entra ID. In the sign in prompt, sign in with the
     username **adelev@{TENANTPREFIX}.onmicrosoft.com** and the User password
-    (replace WWLxXXXXXX with your tenant prefix given on the resources
+    (replace {TENANTPREFIX} with your tenant prefix given on the resources
     tab).
 
 21. Open the RDP file of Christie’s device and following the same 1 t0
     19 steps as we did for Patti’s device, enroll the device in
     Microsoft Entra ID. In the sign in prompt, sign in with the
     username **christiec@{TENANTPREFIX}.onmicrosoft.com** and the User
-    password (replace WWLxXXXXXX with your tenant prefix given on the
+    password (replace {TENANTPREFIX} with your tenant prefix given on the
     resources tab).
 
 **Note:** Henceforth, while logging in these devices you will use the
