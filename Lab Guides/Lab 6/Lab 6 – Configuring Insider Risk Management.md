@@ -281,9 +281,9 @@ generated](./media/image31.png)
 generated](./media/image32.png)
 
 9.   On the **Exclude users and groups** page, select **Next**. 
-10.  On the Decide whether to prioritize page, select I don't want to
-    specify priority content right now (you'll be able to do this after
-    the policy is created). Select Next to continue.
+10.  On the **Decide whether to prioritize** page, select **I don't want to
+    specify priority content right now** (you'll be able to do this after
+    the policy is created). Select **Next** to continue.
 
 ![Graphical user interface, text, application Description automatically
 generated](./media/image33.png)
