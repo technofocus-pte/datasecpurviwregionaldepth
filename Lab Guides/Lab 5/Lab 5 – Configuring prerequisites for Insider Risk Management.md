@@ -175,7 +175,6 @@ generated](./media/image22.png)
 
 3.  Enter these values for the virtual machine:
 
-
 | Setting                 | Value                                                                                                                                       |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | Resource group          | Click on **Create new** > ```ContosoDevices``` > Click on **Ok**                                                                        |
@@ -220,7 +219,6 @@ medium confidence](./media/image26.png)
 | Image                   | Windows 10 Pro, Version 22H2 – x64 Gen2                                                                                                     |
 | Administrator user name | ```Admin01```                                                                                                                               |
 | Password                | ```Pa$$.w0rd@123```
-
 
 | Setting                 | Value                                                                                                                                       |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
