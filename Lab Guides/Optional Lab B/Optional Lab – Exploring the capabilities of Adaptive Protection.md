@@ -5,7 +5,7 @@
 ### Task 1 – Setting up risk levels for Adaptive Protection
 
 1.  In Microsoft Edge, open a New InPrivate Window, navigate
-    to **```https://purview.microsoft.com```** and log in using the
+    to ```https://purview.microsoft.com``` and log in using the
     admin tenant.
 
 2.  From the navigation bar, go to **Solutions** \> **Insider risk**
