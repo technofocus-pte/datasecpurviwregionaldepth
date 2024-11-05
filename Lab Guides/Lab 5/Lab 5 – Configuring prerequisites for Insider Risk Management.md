@@ -219,7 +219,7 @@ medium confidence](./media/image26.png)
 | Security                | Standard                                                                                                                                    |
 | Image                   | Windows 10 Pro, Version 22H2 – x64 Gen2                                                                                                     |
 | Administrator user name | ```Admin01```                                                                                                                               |
-| Password                | ```Pa$$.w0rd@123``
+| Password                | ```Pa$$.w0rd@123```
 
 
 | Setting                 | Value                                                                                                                                       |
@@ -230,7 +230,7 @@ medium confidence](./media/image26.png)
 | Security                | Standard                                                                                                                                    |
 | Image                   | Windows 10 Pro, Version 22H2 – x64 Gen2                                                                                                     |
 | Administrator user name | ```Admin01```                                                                                                                               |
-| Password                | ```Pa$$.w0rd@123``
+| Password                | ```Pa$$.w0rd@123```
 
 9.  You can open the RDP files and use the following local credentials
     to log in sign in to these Virtual Machines.
