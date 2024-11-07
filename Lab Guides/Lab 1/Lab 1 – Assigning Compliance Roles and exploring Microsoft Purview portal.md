@@ -241,7 +241,7 @@ generated](./media/image63.png)
 ![BrokenImage](./media/image66.png)
 
 9. When the **Sign in** window is displayed, sign in as **Patti
-    Fernandez** using the username PattiF@{TENANTPREFIX}.onmicrosoft.com and
+    Fernandez** using the username ```PattiF@{TENANTPREFIX}.onmicrosoft.com``` and
     the User Password given on your resources tab.
 
 10. Verify Azure RMS and IRM is activated in your tenant by using the
@@ -309,7 +309,7 @@ generated](./media/image72.png)
 
 ```Get-OMEConfiguration -Identity "OME Configuration" |fl```
 
-6.  Notice the result should show the **SocialIDSignIn**is set
+6.  Notice the result should show the **SocialIDSignIn** is set
     to **False**.
 
 ![BrokenImage](./media/image74.png)
