@@ -264,7 +264,7 @@ generated](./media/image14.png)
 ![](./media/image15.png)
 
 6.  In the sign in prompt, sign in with the
-    username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the User
+    username ```pattif@{TENANTPREFIX}.onmicrosoft.com``` and the User
     password. (replace {TENANTPREFIX} with your tenant prefix given on the
     resources tab).
 
@@ -283,7 +283,7 @@ generated](./media/image14.png)
 ![](./media/image29.png)
 
 10. In the Set up a work or school account prompt, sign in with
-    username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the User
+    username ```pattif@{TENANTPREFIX}.onmicrosoft.com``` and the User
     password. (replace {TENANTPREFIX} with your tenant prefix given on the
     resources tab).
 
@@ -331,21 +331,21 @@ generated with medium confidence](./media/image36.png)
 ![A screenshot of a computer screen Description automatically generated
 with low confidence](./media/image37.png)
 
-19. Sign in with username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the
+19. Sign in with username ```pattif@{TENANTPREFIX}.onmicrosoft.com``` and the
     User password. (replace {TENANTPREFIX} with your tenant prefix given on
     the resources tab). If asked for the confirmation, click on **Yes**.
 
 20. Open the RDP file of Adele’s device and following the same 1 t0 19
     steps as we did for Patti’s device, enroll the device in Microsoft
     Entra ID. In the sign in prompt, sign in with the
-    username **adelev@{TENANTPREFIX}.onmicrosoft.com** and the User password
+    username ```adelev@{TENANTPREFIX}.onmicrosoft.com``` and the User password
     (replace {TENANTPREFIX} with your tenant prefix given on the resources
     tab).
 
 21. Open the RDP file of Christie’s device and following the same 1 t0
     19 steps as we did for Patti’s device, enroll the device in
     Microsoft Entra ID. In the sign in prompt, sign in with the
-    username **christiec@{TENANTPREFIX}.onmicrosoft.com** and the User
+    username ```christiec@{TENANTPREFIX}.onmicrosoft.com``` and the User
     password (replace {TENANTPREFIX} with your tenant prefix given on the
     resources tab).
 
