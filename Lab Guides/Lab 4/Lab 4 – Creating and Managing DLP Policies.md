@@ -247,15 +247,14 @@ the following file and install it before proceeding further.
 3.  Enter the following command into PowerShell to create a DLP policy
     that scans all Exchange mailboxes:
 
-```New-DlpCompliancePolicy -Name"EmployeeID DLP Policy" -Comment "This
-policy blocks sharing of Employee IDs" -ExchangeLocation All```
+```New-DlpCompliancePolicy -Name "EmployeeID DLP Policy" -Comment "This policy blocks sharing of Employee IDs" -ExchangeLocation All```
 
 ![BrokenImage](./media/image29.png)
 
 4.  Enter the following command into PowerShell to add a DLP rule to the
     DLP policy you created in the previous step:
 
-```New-DlpComplianceRule -Name"EmployeeID DLP rule" -Policy "EmployeeID DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="Contoso Employee IDs"}```
+```New-DlpComplianceRule -Name "EmployeeID DLP rule" -Policy "EmployeeID DLP Policy" -BlockAccess $true -ContentContainsSensitiveInformation @{Name="Contoso Employee IDs"}```
 
 ![Text Description automatically generated](./media/image30.png)
 
@@ -356,11 +355,8 @@ create a file policy, you need to enable file monitoring so Microsoft
     to ```https://security.microsoft.com``` and log into the
     Microsoft 365 Defender portal as **MOD Administrator**.
 
-2.  In the navigation select **Cloud apps** \> **Files** from the menu.
+2.  In the navigation select **System** \> **Settings** \> **Cloud apps** \> **Information Protection** \ **Files** from the menu.
     Then select **Enable file monitoring**.
-
-![A screenshot of a computer Description automatically
-generated](./media/image37.png)
 
 3.  Select the **Enable file monitoring** checkbox and then
     select **Save** if it is not already marked.
@@ -450,8 +446,8 @@ generated](./media/image46.png)
 
 **Note:** If you do not see the **Data Classification Service** in the
 drop down yet, select **None** as of now. Once done come back after some
-time to **Policies**\>**Policy management** \>**All Policies**\>**Search
-for name: Credit card** \>**Select Credit Card Information for files**.
+time to **Policies** \> **Policy management** \> **All Policies** \> **Search
+for name: Credit card** \> **Select Credit Card Information for files**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image47.png)
