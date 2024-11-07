@@ -76,7 +76,7 @@ generated](./media/image7.png)
 
 11. Enter the following cmdlet to create the SharePoint admin url:
 
-```$adminurl = "https://" + $domain.Name.split('.')\[0\] + "-admin.sharepoint.com"```
+```$adminurl = "https://" + $domain.Name.split('.')[0] + "-admin.sharepoint.com"```
 
 ![A screenshot of a computer screen Description automatically
 generated](./media/image9.png)
@@ -205,10 +205,7 @@ generated](./media/image24.png)
     selecting) the newly created **Internal** label and select the
     vertical **…**.
 
-16. Select the **+ Add sub label** from the drop-down menu.
-
-![A screenshot of a computer Description automatically
-generated](./media/image25.png)
+16. Select the **+ Create sublabel** from the drop-down menu.
 
 17. The **New sensitivity label** wizard will start. On the **Label
     details** page, enter the following information:
@@ -363,29 +360,31 @@ generated](./media/image44.png)
 ![A screenshot of a computer Description automatically
 generated](./media/image45.png)
 
-10. On the **Publish to users and groups page**, select **Next**.
+10. On the **Assign admin units** page, select **Next**.
+
+11. On the **Publish to users and groups page**, select **Next**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image46.png)
 
-11. On the **Policy settings** page, select **Next**.
+12. On the **Policy settings** page, select **Next**.
 
 ![BrokenImage](./media/image47.png)
 
-12. On the **Apply a default label to documents** page, select **Next**.
+13. On the **Apply a default label to documents** page, select **Next**.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image48.png)
 
-13. On the **Apply a default label to emails** page, select **Next**.
+14. On the **Apply a default label to emails** page, select **Next**.
 
-14. On the **Default settings for meetings and calendar events**,
+15. On the **Default settings for meetings and calendar events**,
     select **Next**.
 
-15. On the **Default settings for Fabric and Power BI content** page,
+16. On the **Default settings for Fabric and Power BI content** page,
     select **Next**.
 
-16. On the **Name your policy** page, enter the following information:
+17. On the **Name your policy** page, enter the following information:
 
     - Name: ```Internal HR employee data```
 
@@ -395,20 +394,20 @@ generated](./media/image48.png)
 ![Graphical user interface, text, application, email Description
 automatically generated](./media/image49.png)
 
-17. Select **Next**.
+18. Select **Next**.
 
 ![Graphical user interface, text, application Description automatically
 generated](./media/image50.png)
 
-18. On the **Review and finish** page, select **Submit**.
+19. On the **Review and finish** page, select **Submit**.
 
 ![Graphical user interface, text, application Description automatically
 generated](./media/image51.png)
 
-19. The policy will be created and when complete a message will
+20. The policy will be created and when complete a message will
     display **New policy created**.
 
-20. Select **Done and proceed to next task without closing the window**.
+21. Select **Done** and proceed to next task without closing the window.
 
 ![A screenshot of a computer Description automatically
 generated](./media/image52.png)
@@ -460,7 +459,7 @@ generated](./media/image57.png)
 ![Graphical user interface, application, Word Description automatically
 generated](./media/image58.png)
 
-8.  Select **Internal** \>**Employee data (HR)** to apply the label.
+8.  Select **Internal** \> **Employee data (HR)** to apply the label.
 
 **Note**: Be aware, the script you ran in task 1 of this exercise
 activated sensitivity labels in Word for your tenant. It can sometimes
@@ -671,7 +670,9 @@ generated](./media/image81.png)
 ![Graphical user interface, text, application, Word Description
 automatically generated](./media/image82.png)
 
-27. On the **Publish to users and groups** page, select **Next**.
+27.On the **Assign admin Units** page, select **Next**.
+
+28. On the **Publish to users and groups** page, select **Next**.
 
 ![Graphical user interface, text, application Description automatically
 generated](./media/image83.png)
