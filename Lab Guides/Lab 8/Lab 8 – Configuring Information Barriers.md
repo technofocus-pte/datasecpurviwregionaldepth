@@ -66,15 +66,15 @@ generated](./media/image4.png)
 7.  Run the following command one by one in the **PowerShell** to create
     the organisation structure.
 
-```New-OrganizationSegment -Name"HR" -UserGroupFilter"Department -eq 'HR'"```
+```New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"```
 
 ![BrokenImage](./media/image6.png)
 
-```New-OrganizationSegment -Name"Sales" -UserGroupFilter "Department -eq 'Sales'"```
+```New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"```
 
-```New-OrganizationSegment -Name"Marketing" -UserGroupFilter "Department -eq 'Marketing'"```
+```New-OrganizationSegment -Name "Marketing" -UserGroupFilter "Department -eq 'Marketing'"```
 
-```New-OrganizationSegment -Name"Research" -UserGroupFilter "Department -eq 'Research'"```
+```New-OrganizationSegment -Name "Research" -UserGroupFilter "Department -eq 'Research'"```
 
 ```New-OrganizationSegment -Name "Manufacturing" -UserGroupFilter "Department -eq 'Manufacturing'"```
 
@@ -193,7 +193,7 @@ generated](./media/image4.png)
     it will help prevent users who are in the **Research** segment from
     communicating with users in the **Sales** segment.
 
-```New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -StateInactive```
+```New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive```
 
 ![BrokenImage](./media/image20.png)
 
@@ -203,7 +203,7 @@ generated](./media/image4.png)
     with **HR** and **Marketing**. HR and Marketing aren't restricted
     from communicating with other segments..
 
-```New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing"-AssignedSegment "Manufacturing"-SegmentsAllowed"HR","Marketing","Manufacturing"-State Inactive```
+```New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing"-AssignedSegment "Manufacturing"-SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive```
 
 ![A computer screen shot of a computer program Description automatically
 generated](./media/image21.png)
