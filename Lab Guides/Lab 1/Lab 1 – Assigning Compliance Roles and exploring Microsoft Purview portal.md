@@ -2,7 +2,7 @@
 
 ## Objective:
 
-In this lab we create users and assign them appropriate roles, teams, and groups in the Office 365 admin center to represent an organisation—Contoso.
+In this lab we create users and assign them appropriate roles, teams, and groups in the Microsoft 365 admin center to represent an organisation—Contoso.
 
 We also assign the following to the Users:
 
@@ -20,9 +20,6 @@ transport rule to apply the OME configuration to all mails sent from our
 finance department.
 
 ## Exercise 1 - Managing Compliance Roles
-
-In this exercise we will be activating all the trial licenses required
-for implementing security with Microsoft Purview.
 
 ### Task 1 – Adding Manager role to an existing user.
 
@@ -92,7 +89,7 @@ generated](./media/image29.png)
 ![](./media/image31.png)
 
 4.  On the **Add members** page add **Adele Vance** as a member,
- click **Next**. On the **Add members** page, select **Next**.
+ click **Add**. On the **Add members** page, select **Next**.
 
 5.  For group email address use ```contfosofinance``` and then
  click **Next**.
@@ -284,7 +281,7 @@ your organization.
 
 1.  Run the following cmdlet to view the default OME configuration:
 
-```Get-OMEConfiguration -Identity"OME Configuration" |fl```
+```Get-OMEConfiguration -Identity "OME Configuration" |fl```
 
 ![A screen shot of a computer Description automatically
 generated](./media/image70.png)
@@ -297,7 +294,7 @@ generated](./media/image70.png)
 3.  Run the following cmdlet to restrict the use of social IDs for
     accessing messages from your tenant protected with OME:
 
-```Set-OMEConfiguration -Identity"OME Configuration" -SocialIdSignIn:$false```
+```Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn:$false```
 
 ![A computer screen with text on it Description automatically
 generated](./media/image72.png)
@@ -434,7 +431,7 @@ to all mails sent from the finance department.
 
 3.  Change the introduction text message with the following cmdlet
 
-```Set-OMEConfiguration -Identity "Finance Department" -IntroductionText "from Contoso Ltd. finance department has sent you a secure message."```
+```Set-OMEConfiguration -Identity "Finance Department" -IntroductionText "from Contoso Ltd. Finance department has sent you a secure message."```
 
 ![BrokenImage](./media/image84.png)
 
@@ -455,7 +452,7 @@ to all mails sent from the finance department.
 7.  Change the disclaimer URL to point to Contoso's privacy statement
     site
 
-```Set-OMEConfiguration -Identity "Finance Department" -PrivacyStatementURL"https://contoso.com/privacystatement.html"```
+```Set-OMEConfiguration -Identity "Finance Department" -PrivacyStatementURL "https://contoso.com/privacystatement.html"```
 
 ![Text Description automatically generated](./media/image87.png)
 
@@ -468,7 +465,7 @@ to all mails sent from the finance department.
     the custom OME template to all messages sent from the Contoso
     finance team. This process may take a few seconds to complete.
 
-```New-TransportRule -Name "Encrypt all mails from Contoso Finance team" -FromScopeInOrganization  FromMemberOf "Contoso Finance Team" -ApplyRightsProtectionCustomizationTemplate" Finance Department" -ApplyRightsProtectionTemplate Encrypt```
+```New-TransportRule -Name "Encrypt all mails from Contoso Finance team" -FromScope InOrganization -FromMemberOf "Contoso Finance Team" -ApplyRightsProtectionCustomizationTemplate "Finance Department" -ApplyRightsProtectionTemplate Encrypt```
 
 ![BrokenImage](./media/image89.png)
 
@@ -496,7 +493,7 @@ when you have your own licenses. You can perform step 1 - 4 but your
 mail may not be able to reach the receiver from your current trial tenant.
 
 1.  In **Microsoft Edge**, open a **New InPrivate Window** and navigate
-    to **https://outlook.office.com** and log into Outlook on the web
+    to ```https://outlook.office.com``` and log into Outlook on the web
     with the username **ChristieC@{TENANTPREFIX}.onmicrosoft.com** and the
     User Password given on the resources tab.
 
