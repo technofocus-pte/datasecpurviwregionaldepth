@@ -135,7 +135,7 @@ generated](./media/image15.png)
 9.  Repeat the steps from 1 to 7 to
     update **Adeles-Device** and **Christies-Device**.
 
-10. Sign in to ```https://security.microsoft.com/``` using
+10. Sign in to ```https://purview.microsoft.com/``` using
     your **MOD Administrator** account on your Lab VM.
 
 11. Select **Settings** \> **Device onboarding**.
@@ -215,7 +215,7 @@ generated](./media/image26.png)
     Defender** portal.
 
 25. Open the ```https://purview.microsoft.com``` and log in with the
-    username **<pattif@{TENANTPREFIX}.onmicrosoft.com>** and the User
+    username ```pattif@{TENANTPREFIX}.onmicrosoft.com``` and the User
     password. (replace {TENANTPREFIX} with your tenant prefix given on the
     resources tab).
 
@@ -235,7 +235,7 @@ to be enabled, please allow up to 30 minutes.
 
 1.  If you closed the browser window in the previous task, open
     the ```https://purview.microsoft.com``` and log in with the
-    username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the User
+    username ```pattif@{TENANTPREFIX}.onmicrosoft.com``` and the User
     password. (replace {TENANTPREFIX} with your tenant prefix given on the
     resources tab).
 
@@ -375,7 +375,7 @@ with medium confidence](./media/image46.png)
 
 1.  If you closed the browser window in the previous task, open
     the ```https://purview.microsoft.com``` and log in with the
-    username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the User
+    username ```pattif@{TENANTPREFIX}.onmicrosoft.com``` and the User
     password. (replace {TENANTPREFIX} with your tenant prefix given on the
     resources tab).
 
@@ -523,7 +523,7 @@ generated](./media/image63.png)
 
 1.  If you closed the browser window in the previous task, open
     the ```https://purview.microsoft.com``` and log in with the
-    username **pattif@{TENANTPREFIX}.onmicrosoft.com** and the User
+    username ```pattif@{TENANTPREFIX}.onmicrosoft.com``` and the User
     password. (replace {TENANTPREFIX} with your tenant prefix given on the
     resources tab).
 
@@ -567,7 +567,7 @@ medium confidence](./media/image66.png)
 
 8.  On the SharePoint sites to prioritize page, select **Add or edit
     SharePoint sites**. On the flyout pane,
-    select **https://{TENANTPREFIX}.sharepoint.com/sites/ContosoWeb1** and
+    select ```https://{TENANTPREFIX}.sharepoint.com/sites/ContosoWeb1``` and
     select **Add**. Then click **Next**.
 
 9.  On the **Sensitivity labels to prioritize** page, select **Add or edit
