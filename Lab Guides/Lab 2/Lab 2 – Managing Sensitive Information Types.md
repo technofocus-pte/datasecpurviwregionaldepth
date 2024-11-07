@@ -50,7 +50,7 @@ generated](./media/image2.png)
 
     - **Name**: ```Contoso Employee IDs```
 
-    - **Description**: ```Pattern for Contoso Employee IDs```.
+    - **Description**: ```Pattern for Contoso Employee IDs```
 
     - Select **Next**.
 
@@ -158,10 +158,10 @@ Birthdate, StreetAddress, and EmployeeID.
 ![A screenshot of a computer Description automatically
 generated](./media/image13.png)
 
-2.  In the **Name** field, enter ```employeedb```.
+2.  In the **Name** field, enter ```employeedb```
 
 3.  In the **Description** field,
-    enter ```Employee Database schema.```.
+    enter ```Employee Database schema.```
 
 4.  Enable **Ignore delimiters and punctuation for all schema fields**.
 
