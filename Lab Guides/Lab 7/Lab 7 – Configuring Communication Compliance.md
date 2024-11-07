@@ -18,8 +18,7 @@ users in your organization.
     otherwise, open the ```https://purview.microsoft.com``` and log
     in with the **MOD Administrator** credentials.
 
-2.  In the navigation select **Settings**, and select **Role**
-    **groups** under **Role groups**, select **Communication
+2.  In the navigation select **Settings**, and select **Role groups** under **Roles and scopes**, select **Communication
     Compliance**. Then select **Edit**. On the side pane, again select
     **Edit**.
 
@@ -34,21 +33,15 @@ generated](./media/image4.png)
 4.  Make sure to select **MOD Administrator**, **Megan Bowen**, and
     **Patti Fernandez**. Then choose **Select**.
 
-![](./media/image7.png)
+![](./media/image5.png)
 
 5.  Select **Next**.
-
-![A screenshot of a computer Description automatically
-generated](./media/image10.png)
 
 6.  Select **Save** to add the users to the role group.
     Select **Done** to complete the steps.
 
 ![A screenshot of a computer Description automatically
-generated](./media/image12.png)
-
-![A screenshot of a computer Description automatically
-generated](./media/image13.png)
+generated](./media/image6.png)
 
 ## Exercise 2 – Setting up groups for communication compliance
 
@@ -70,12 +63,12 @@ organization.
 
 ```Connect-ExchangeOnline```
 
-![Text Description automatically generated](./media/image14.png)
+![Text Description automatically generated](./media/image7.png)
 
 3.  When the **Sign in** window is displayed, sign in as **MOD
     Administrator**.
 
-![BrokenImage](./media/image15.png)
+![BrokenImage](./media/image8.png)
 
 4.  Create a dedicated distribution group for your global communication
     compliance policy with the following properties:
@@ -93,7 +86,7 @@ organization.
 
 ```New-DistributionGroup -Name "Communication Compliance Group Contoso" -Alias "CCG_Contoso" -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true```
 
-![BrokenImage](./media/image16.png)
+![BrokenImage](./media/image9.png)
 
 **Note:** You can add an **Exchange Custom Attribute** as in
 the **following command**to track users added to the communication
@@ -102,7 +95,7 @@ compliance policy in your organization.
 ```Set-DistributionGroup -Identity "Communication Compliance Group Contoso"-CustomAttribute1 "MonitoredCommunication"```
 
 ![A screen shot of a computer Description automatically
-generated](./media/image17.png)
+generated](./media/image10.png)
 
 5.  Run the following PowerShell script on a recurring schedule to add
     users to the communication compliance policy:
@@ -121,7 +114,7 @@ $i++
 Write-Host $i "Mailboxes added to supervisory review distribution group."
 ```
 
-![BrokenImage](./media/image18.png)
+![BrokenImage](./media/image11.png)
 
 **Note:** This script is supposed to be run after every particular
 interval. As of now you will be able to see the Distribution list under
@@ -130,7 +123,7 @@ Active teams & Groups in Microsoft 365 admin center.
 If you click on the group name, you will be able to see all the users
 listed under members tab.
 
-![BrokenImage](./media/image19.png)
+![BrokenImage](./media/image12.png)
 
 ## Exercise 3 – Creating a communication compliance policy
 
@@ -145,36 +138,36 @@ listed under members tab.
     **Create policy**.
 
 ![A screenshot of a computer Description automatically
-generated](./media/image23.png)
+generated](./media/image13.png)
 
 4.  Select **Custom policy** from the drop down.
 
-![](./media/image25.png)
+![](./media/image14.png)
 
 5.  On the Name your DLP policy page, type ```My first communication compliance policy``` in the **Name** field and ```This is a policy to test communication compliance``` in the **Description** field. Select **Next**.
 
 ![Graphical user interface, text, application Description automatically
-generated](./media/image26.png)
+generated](./media/image16.png)
 
 6.  On the **Choose supervised users and reviewers** page, keep rest of
     the default settings and under reviews add **Patti Fernandez**. Then
     click on **Next**.
 
 ![A screenshot of a computer Description automatically
-generated](./media/image28.png)
+generated](./media/image17.png)
 
 7.  On the **communications** page, check all the boxes
     under **Microsoft 365 locations** and click on **Next**.
 
 ![A screenshot of a computer Description automatically
-generated](./media/image30.png)
+generated](./media/image18.png)
 
 8.  On the **Choose conditions and review percentage**, select **Add
     condition**, from the drop down, select **Content contains any of
     these sensitive info types**.
 
 ![A screenshot of a computer screen Description automatically
-generated](./media/image32.png)
+generated](./media/image19.png)
 
 9.  In the **Content contains any of these sensitive info types** box,
     select **Add**, click on **Sensitive info types**, and search
@@ -182,26 +175,26 @@ generated](./media/image32.png)
     created in earlier labs. Then click **Add**
 
 ![Graphical user interface, text, application Description automatically
-generated](./media/image33.png)
+generated](./media/image20.png)
 
 10. On **Choose conditions and review percentage**, check the box
     beside **Use OCR to extract text from images**, set **Review
     percentage to 100%**, and then click on **Next**.
 
 ![Graphical user interface, application Description automatically
-generated](./media/image34.png)
+generated](./media/image21.png)
 
 11. On **Review and finish** page, select **Create policy**.
 
 ![Graphical user interface, text, application Description automatically
-generated](./media/image35.png)
+generated](./media/image22.png)
 
 12. The **Your policy was created** page is displayed with guidelines on
     when policy will be activated and which communications will be
     captured.
 
 ![Graphical user interface, text, application Description automatically
-generated](./media/image36.png)
+generated](./media/image23.png)
 
 ## Exercise 4 – Editing a communication compliance policy
 
@@ -215,31 +208,31 @@ generated](./media/image36.png)
     select **Edit**.
 
 ![A screenshot of a computer Description automatically
-generated](./media/image37.png)
+generated](./media/image24.png)
 
 3.  Leave the **Name and describe your policy** blank and
     click **Next**.
 
 ![Graphical user interface, text, application Description automatically
-generated](./media/image39.png)
+generated](./media/image25.png)
 
 4.  On **Choose supervised user and reviewers** and under **Supervised
     users and groups**, select the **Select users** button.
 
 ![Graphical user interface, application, Teams Description automatically
-generated](./media/image40.png)
+generated](./media/image26.png)
 
 5.  In the **Start typing to find users or groups**, search
     for **Communication** and select **Communication Compliance Groups
     Contoso**.
 
-![](./media/image42.png)
+![](./media/image27.png)
 
-6.  On Choose supervised user and reviewers under Reviewers add MOD
-    Administrator to the Reviewers.
+6.  On **Choose supervised user and reviewers** under **Reviewers** add **MOD
+    Administrator** to the Reviewers.
 
 ![Graphical user interface, application, Teams Description automatically
-generated](./media/image44.png)
+generated](./media/image28.png)
 
 7.  Select **Next** till you reach **Review and finish** page.
 
@@ -250,19 +243,19 @@ generated](./media/image44.png)
 1.  In the Microsoft Purview portal, select Settings from the top right
     corner and the select **Communication compliance**.
 
-![](./media/image45.png)
+![](./media/image29.png)
 
 2.  Select the **Privacy** tab. To enable anonymization, make
     sure **Show anonymized versions of usernames** is selected.
     Select **Save**.
 
 ![A screenshot of a computer Description automatically
-generated](./media/image48.png)
+generated](./media/image30.png)
 
 3.  Navigate to the **Notice templates** tab and then select **Create
     notice template**.
 
-![](./media/image49.png)
+![](./media/image31.png)
 
 4.  On the **Modify a notice template** page, complete the following
     fields:
@@ -282,7 +275,7 @@ generated](./media/image48.png)
 5.  Select **Create** to create and save the notice template.
 
 ![A screenshot of a computer Description automatically
-generated](./media/image52.png)
+generated](./media/image32.png)
 
 ## Exercise 6 – Testing your communication compliance policy
 
